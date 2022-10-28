@@ -1,0 +1,65 @@
+ul[role="listbox"] {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -9px;
+  left: -13px;
+  list-style: none;
+  background-color: white;
+  display: none;
+  height: 50px;
+  width: 14.9em;
+  color: #ff4e2e;
+  overflow: visible;
+}
+
+ul[role="listbox"] li[role="option"] {
+  margin: 0;
+  padding-top: 8px;
+  padding-left: 8px;
+}
+
+[role="listbox"].focus {
+  border-color: #348ccb;
+}
+
+[role="listbox"] [role="option"] {
+  display: block;
+  margin: 0.25em;
+  padding: 0;
+  background-color: white;
+  font-size: 16px;
+}
+
+/* focus and hover styling */
+
+button:focus,
+button:hover,
+input:focus,
+input:hover {
+  /* outline: 2px solid black; */
+}
+
+input:focus,
+input:hover {
+}
+
+[role="listbox"] [role="option"][aria-selected="true"] {
+  background-color: #ccc;
+}
+
+[role="listbox"].focus [role="option"][aria-selected="true"] {
+  background-color: #aed2ea;
+  border-color: #348ccb;
+}
+
+[role="listbox"] li[role="option"]:hover {
+  background-color: #c2ddef;
+}
+
+@media (max-width:992px) {
+  ul[role="listbox"] {
+    width: 14.9em;
+    top: -119px;
+}
+}
