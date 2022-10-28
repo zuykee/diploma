@@ -1,1 +1,1 @@
-# diploma
+https://zuykee.github.io/diploma
